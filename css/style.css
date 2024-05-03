@@ -157,6 +157,7 @@ span{
     background-color: var(--red);
 }
 #article2S1 > span > i{
+    cursor: pointer;
     max-width: 15px;
     height: 18px;
     padding: 8px;
@@ -166,6 +167,9 @@ span{
     color: var(--white);
     font-size: 20px;
     background-color: var(--red);
+}
+#article2S1 > span > i:hover{
+opacity: 0.6;
 }
 #article2S1 button{
     font-size: 15px;
