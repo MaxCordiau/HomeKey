@@ -454,9 +454,15 @@ color : var(--red);
 
 /* RESONSIVE */
 @media only screen and (min-width: 768px) and (max-width:1024px) {
+    #gallerie{
+        justify-content: space-between;
+    }
     #s2{
         flex-direction: column;
         gap: 20px;
+    }
+    #s3 article{
+        flex: 0 1 29%;
     }
     #s3 article a{
         margin: auto;
