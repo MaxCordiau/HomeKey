@@ -36,6 +36,7 @@ h3{
 
 }
 p{
+    margin: 5px 0px 5px 0px;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.79px;
@@ -65,7 +66,9 @@ a:hover{
     box-shadow: 5px 5px 10px var(--grey); 
 }
 
-
+.fa-star:before {
+    margin-right: 2px;
+}
 /* Header */
 header{
     align-items: center;
@@ -128,7 +131,7 @@ footer ul{
     gap: 12px;
 }
 footer p{
-    margin: 10px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -270,7 +273,7 @@ gap: 40px;
     margin-bottom: 30px;
 
     /* justify-content: center; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-start;
 }
 #gallerie article{
@@ -427,7 +430,6 @@ color : var(--red);
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 #s3 img{
     object-fit: cover;
@@ -442,9 +444,13 @@ color : var(--red);
 }
 #s3 article{
     text-align: center;
-    width: 322.5px;
+    flex: 0 1 22%;
+    /* width: 322.5px; */
     background-color: var(--white);
     border-radius: 12px 12px 12px 12px ;
+}
+#s3 h3{
+    margin: 5px 0px 5px 0px;
 }
 
 /* RESONSIVE */
@@ -456,6 +462,9 @@ color : var(--red);
     #s3 article a{
         margin: auto;
     }
+    #gallerie article{
+        flex: 0 1 25%
+    }
     #gallerie-aside{
         margin: 0%;
     }
@@ -463,9 +472,18 @@ color : var(--red);
         width: 300px
         ;
     }
+    #s3 div{
+        justify-content: center;
+    }
+    #s3 > div > article:nth-child(4){
+        flex: 0 1 100%;
+    }
+    #s3 > div > article:nth-child(4) > a > img{
+        width: -webkit-fill-available;
+    }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 767.20px){
     nav a:hover{
         border-top: transparent;
         border-bottom: 1px solid var(--red);
@@ -489,7 +507,7 @@ color : var(--red);
         flex-direction: column;
     }
     #s3 div{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     #s3 article{
         width: 500px;
@@ -506,4 +524,13 @@ color : var(--red);
     #gallerie-aside{
         margin: 0%;
     }
+    #s3 > div > article:nth-child(4){
+        flex: 0 1 22%;
+    }
+    #s3 > div > article:nth-child(4) > a > img{
+        width: default;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 846px){
+
 }
