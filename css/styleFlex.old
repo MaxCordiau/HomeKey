@@ -1,3 +1,4 @@
+/* V1 Code a Optimiser */  
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /* Global */
 *{
@@ -13,10 +14,6 @@
     --lightgrey:#f1f1f1;
     --font:'Open Sans', sans-serif;
 }
-/* body{
-    margin-left: 15px;
-    margin-right: 15px;
-} */
 .container-width-1440{
     max-width: 1440px;
     margin: auto;
@@ -171,7 +168,7 @@ span{
     background-color: var(--red);
 }
 #article2S1 > span > i:hover{
-opacity: 0.6;
+    opacity: 0.6;
 }
 #article2S1 button{
     font-size: 15px;
@@ -228,7 +225,6 @@ opacity: 0.6;
 #s2{
 display: flex;
 gap: 40px;
-/* max-width: 1500px; */
 }
 
 /* Gallerie Global */
@@ -268,15 +264,10 @@ gap: 40px;
     border-radius: 12px;
     background-color: var(--lightgrey);
     gap: 20px;
-    /* max-width: 850px; */
     margin-bottom: 30px;
-
-    /* justify-content: center; */
-    /* justify-content: space-between; */
     align-items: flex-start;
 }
 #gallerie article{
-    /* display: flex; */
     flex-wrap: nowrap;
     position: relative;
     padding: 5px;
@@ -311,18 +302,6 @@ gap: 40px;
     padding: 3px;
     z-index: 1;
 }
-/* #gallerie article::before{
-    content: "Recommended";
-    position: absolute;
-    font-size: 14px;
-    background-color: var(--red);
-    color: var(--white);
-    top: 10px;
-    right: 10px;
-    border-radius: 5px;
-    padding: 3px;
-    z-index: 1;
-} */
 #gallerie article i{
     color : var(--red);
     }
@@ -406,7 +385,6 @@ gap: 40px;
 #gallerie-aside article img{
     object-fit: cover;
     width: 100%;
-    /* width: 35%; */
     height: 160px;
 }
 #gallerie-aside article img:hover{
@@ -444,7 +422,6 @@ color : var(--red);
 #s3 article{
     text-align: center;
     flex: 0 1 22%;
-    /* width: 322.5px; */
     background-color: var(--white);
     border-radius: 12px 12px 12px 12px ;
 }
@@ -549,7 +526,4 @@ color : var(--red);
     #s3 > div > article:nth-child(4) > a > img{
         width: default;
     }
-}
-@media only screen and (min-width: 320px) and (max-width: 846px){
-
 }
